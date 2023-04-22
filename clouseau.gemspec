@@ -1,17 +1,17 @@
 # frozen_string_literal: true
 
-require_relative "lib/clouseau/version"
+require_relative 'lib/clouseau/version'
 
 Gem::Specification.new do |spec|
-  spec.name = "clouseau"
+  spec.name = 'clouseau'
   spec.version = Clouseau::VERSION
-  spec.authors = ["Sam Jenkins"]
-  spec.email = ["dustpan.umpires0y@icloud.com"]
+  spec.authors = ['Sam Jenkins']
+  spec.email = ['dustpan.umpires0y@icloud.com']
 
-  spec.summary = "Anonymise the data in your database."
+  spec.summary = 'Anonymise the data in your database.'
   # spec.description = "TODO: Write a longer description or delete this line."
   # spec.homepage = "TODO: Put your gem's website or public repo URL here."
-  spec.required_ruby_version = ">= 3.0.0"
+  spec.required_ruby_version = '>= 3.0.0'
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
@@ -26,9 +26,9 @@ Gem::Specification.new do |spec|
       (File.expand_path(f) == __FILE__) || f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor])
     end
   end
-  spec.bindir = "exe"
+  spec.bindir = 'exe'
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
